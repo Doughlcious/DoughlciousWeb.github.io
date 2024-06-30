@@ -1,46 +1,119 @@
 body {
-    background-color: limegreen;
+  background-color: rgb(89, 1, 197);
+  background-image: url(https://www.onlygfx.com/wp-content/uploads/2016/08/halftone-simple-1024x927.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px;
+}
+/* For banner */
+#header {
+  background-color: black;
+  background-image: url("https://www.myabandonware.com/media/screenshots/m/metal-angel-mil/metal-angel_2.png");
+  background-size: auto 150%;
+  background-repeat: repeat;
+  filter: hue-rotate(15deg);
+  color: black;
+  margin: 0%;
+  padding: 2%;
+  border-bottom: 5px solid rgb(170, 255, 0);
+}
+/*
+background-image: url(https://www.onlygfx.com/wp-content/uploads/2016/08/halftone-simple-1024x927.png);
+
+https://c.tenor.com/lSxb9peyIzEAAAAC/green.gif
+
+https://i.pinimg.com/originals/7c/e9/fc/7ce9fcea08870e7a4a3cda4857eba114.gif
+
+*/
+.pfp {  
+  position: relative;
+  filter: hue-rotate(345deg);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40vw;
+  border-radius: 100%;
+  border: 1.2vw solid rgb(170, 255, 0);
 }
 
-h1 {
-    text-align: center;
-    font-family: courier;
+.pfpArrows {
+  position: absolute;
+  width: 25vw;
+  filter: invert(48%) sepia(13%) saturate(4000%) hue-rotate(35deg) brightness(180%) contrast(80%);
+  
 }
 
-.MikeyTransition {
-    position: relative;
-    width: 50%;
+#pfpFirstArrow {
+  animation-name: firstArrow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 
-.Mikey { 
-    /*w3school code*/
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-    backface-visibility: hidden;
+@keyframes firstArrow {
+  0% {transform:translate(1vw, -3vw) scaleX(-1);}
+  50% {transform:translate(1vw, -2vw) scaleX(-1);}
+  100% {transform:translate(1vw, -3vw) scaleX(-1);}
 }
 
-.MiddleButton {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
+#pfpSecondArrow {
+  animation-name: secondArrow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 
-.MikeyTransition:hover .MiddleButton {
-    opacity: 1;
+@keyframes secondArrow {
+  0% {transform:translate(67vw, -2vw);}
+  50% {transform:translate(67vw, -3vw);}
+  100% {transform:translate(67vw, -2vw);}
+}
+/*   filter: invert(48%) sepia(13%) saturate(4000%) hue-rotate(35deg) brightness(180%) contrast(80%);
+*/
+/* End of Banner */
+/* ---------------------------------------------- */
+/* Greeting message */
+#greetingmsg {
+  margin: 0%;
+  color: rgb(170, 255, 0);
+  padding-top: 3%;
+  padding-left: 4%;
+  padding-bottom: 3%;
+  font-size: 5.3vw;
+}
+hr.greetinglinebreak {
+  border: 2px dashed rgb(170, 255, 0);
 }
 
-.MikeyTransition:hover .Mikey {
-    opacity: 0.3;
+/* ---------------------------------------------- */
+/* Start of Menu formatting */
+
+.menuHeaders {
+  position: static;
+  color: rgb(170, 255, 0);
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 10vw;
+  display:inline;
+}
+/*
+- possible fonts 
+font-family: "Permanent Marker"
+font-family: "Bebas Neue";
+*/
+
+.menuHeaders:hover {
+  color:aquamarine;
 }
 
-.Text {
-    background-color: #FC6F09;
-    color: white;
-    font-size: 16px;
-    padding: 16px 32px;
+.image {
+  border: 1vw solid rgb(170, 255, 0);
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+.column {
+  position: relative;
+  width: 40%;
+  margin: 5%;
 }
